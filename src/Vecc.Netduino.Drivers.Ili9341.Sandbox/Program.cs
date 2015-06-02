@@ -15,12 +15,10 @@ namespace Vecc.Netduino.Drivers.Ili9341.Sandbox
             tft.ClearScreen();
             tft.DrawString(10, 10, "NETDUINO PLUS 2", 0xF800, font);
             tft.DrawString(10, 50, "ILI9341 TFT TESTING PASS!", 0xF800, font);
-            tft.DrawString(10, 90, "WWW.NTEX.TW", 0xF800, font);
-            tft.DrawString(10, 90, "WWW.NTEX.TW", 0xF800, font);
+            tft.DrawString(10, 90, "  WWW.NTEX.TW", 0xF800, font); 
             tft.DrawLine(20, 170, 210, 170, 0x0F00);
             tft.DrawRectangle(20, 180, 200, 50, 0x0f00);
-            tft.FillScreen(22, 218, 180, 230, 0xfff0);
-            tft.DrawString(80, 200, "AquaCloud", 0x00ff, font); 
+            tft.FillScreen(22, 218, 180, 230, 0xfff0); 
             tft.BacklightOn = true;
 
             int i = 0;
