@@ -1,0 +1,10 @@
+VCC to 3.3v
+GND power ground.
+CS to D10
+RESET to A1
+D/c to A2
+
+SDI to D11 (Mosi)
+SCK to D13 (spck)
+
+I have also connected LED to 3.3v for the backlight.

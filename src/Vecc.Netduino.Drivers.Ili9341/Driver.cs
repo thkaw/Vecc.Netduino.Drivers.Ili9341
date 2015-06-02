@@ -7,7 +7,7 @@ namespace Vecc.Netduino.Drivers.Ili9341
 {
     public partial class Driver
     {
-        const byte lcdPortraitConfig = 8;
+        const byte lcdPortraitConfig = 72;  //
         const byte lcdLandscapeConfig = 44;
 
         private readonly OutputPort _dataCommandPort;
@@ -39,7 +39,7 @@ namespace Vecc.Netduino.Drivers.Ili9341
                       Cpu.Pin dataCommandPin = Cpu.Pin.GPIO_NONE,
                       Cpu.Pin resetPin = Cpu.Pin.GPIO_NONE,
                       Cpu.Pin backlightPin = Cpu.Pin.GPIO_NONE,
-                      uint spiClockFrequency = 20000,
+                      uint spiClockFrequency = 1311,
                       SPI.SPI_module spiModule = SPI.SPI_module.SPI1)
         {
             _spi = new SPI(new SPI.Configuration(lcdChipSelectPin, // CS-pin
